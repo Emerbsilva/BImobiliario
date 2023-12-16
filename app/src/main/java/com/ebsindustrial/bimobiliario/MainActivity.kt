@@ -24,7 +24,8 @@ class MainActivity : AppCompatActivity() {
 
         // Criado uma barra toolbar
         val toolBar = binding.toolbar
-        toolBar.title = "Maquininha"
+        toolBar.setTitle(R.string.tituloToolbar)
+        //toolBar.title = "Maquininha"
         toolBar.setTitleTextColor(getColor(R.color.white))
         toolBar.setBackgroundColor(getColor(R.color.fundoDark))
         toolBar.setTitleMargin(360, 0, 200, 0)
