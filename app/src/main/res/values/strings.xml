@@ -6,7 +6,17 @@
     <string name="txtJog4">Jogador 4</string>
     <string name="txtJog5">Jogador 5</string>
     <string name="txtJog6">Jogador 6</string>
+
+    <!--Textos dos hInt-->
     <string name="valor">VALOR</string>
+    <string name="valorEdt">999999999</string>
+    <string name="txtSorte">SORTE OU AZAR</string>
+
+    <!--Textos dos botoes-->
+    <string name="botaoTransferir">Transferir</string>
+    <string name="botaoIniciar">Iniciar</string>
+    <string name="botaoSorte">Sorte</string>
+    <string name="botaoSalvar">Salvar</string>
 
     <!--Textos do Radio Button-->
     <string name="jog1">Jog 1</string>
