@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="lightBlack">#575759</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="blue">#0000ff</color>
+    <color name="lightBlue">#9C9CFF</color>
+    <color name="green">#00ff00</color>
+    <color name="lightGreen">#C9ffC9</color>
+    <color name="red">#ff0000</color>
+    <color name="lightRed">#ffC9C9</color>
+    <color name="yellow">#FEE400</color>
+    <color name="orange">#FF9800</color>
+    <color name="lightYellow">#FFF8B6</color>
+    <color name="fundo">#004F4F</color>
+    <color name="fundoDark">#033535</color>
+    <color name="back_botao">#014C7B</color>
 </resources>
