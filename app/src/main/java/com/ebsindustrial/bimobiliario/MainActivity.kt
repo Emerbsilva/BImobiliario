@@ -1,8 +1,11 @@
 package com.ebsindustrial.bimobiliario
 
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.annotation.RequiresApi
 import com.ebsindustrial.bimobiliario.databinding.ActivityMainBinding
 import kotlin.random.Random
@@ -11,7 +14,7 @@ import kotlin.random.nextInt
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-
+    private lateinit var sharedPref: SharedPreferences
     private var sorteados = mutableListOf<Int>()
     private val maxMensagemSorte = 30
     private var soma = 0
@@ -28,12 +31,15 @@ class MainActivity : AppCompatActivity() {
         //toolBar.title = "Maquininha"
         toolBar.setTitleTextColor(getColor(R.color.white))
         toolBar.setBackgroundColor(getColor(R.color.fundoDark))
-        toolBar.setTitleMargin(360, 0, 200, 0)
+        toolBar.setTitleMargin(250, 0, 200, 0)
+
+        sharedPref = getSharedPreferences("bancoImobiliario", Context.MODE_PRIVATE)
 
         desabilita()
         iniciar()
         sorte()
         salvar()
+        recuperar()
         transferir()
     }
     //
@@ -138,7 +144,51 @@ class MainActivity : AppCompatActivity() {
     }
     //
     private fun salvar(){
+        binding.btSalvar.setOnClickListener {
+            saveData()
+            Toast.makeText(this, "Informações do jogo salvas com sucesso!!", Toast.LENGTH_SHORT).show()
+        }
+    }
+    //
+    private fun recuperar(){
+        binding.btRecuperar.setOnClickListener {
+            getData()
+        }
+    }
+    //
+    private fun saveData(){
+        val valorJog1 = binding.vlJog1.text.toString()
+        val valorJog2 = binding.vlJog2.text.toString()
+        val valorJog3 = binding.vlJog3.text.toString()
+        val valorJog4 = binding.vlJog4.text.toString()
+        val valorJog5 = binding.vlJog5.text.toString()
+        val valorJog6 = binding.vlJog6.text.toString()
 
+        with (sharedPref.edit()) {
+            putString("valorJog1", valorJog1)
+            putString("valorJog2", valorJog2)
+            putString("valorJog3", valorJog3)
+            putString("valorJog4", valorJog4)
+            putString("valorJog5", valorJog5)
+            putString("valorJog6", valorJog6)
+            apply()
+        }
+    }
+    //
+    private fun getData(){
+        val valorJog1 = sharedPref.getString("valorJog1", "0000")
+        val valorJog2 = sharedPref.getString("valorJog2", "0000")
+        val valorJog3 = sharedPref.getString("valorJog3", "0000")
+        val valorJog4 = sharedPref.getString("valorJog4", "0000")
+        val valorJog5 = sharedPref.getString("valorJog5", "0000")
+        val valorJog6 = sharedPref.getString("valorJog6", "0000")
+
+        binding.vlJog1.setText(valorJog1)
+        binding.vlJog2.setText(valorJog2)
+        binding.vlJog3.setText(valorJog3)
+        binding.vlJog4.setText(valorJog4)
+        binding.vlJog5.setText(valorJog5)
+        binding.vlJog6.setText(valorJog6)
     }
     //
     private fun transferir(){

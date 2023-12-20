@@ -1,9 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.BImobiliario" parent="Theme.Material3.DayNight.NoActionBar">
+    <style 
+        name="Base.Theme.BImobiliario" 
+        parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/fundo</item>
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.BImobiliario" parent="Base.Theme.BImobiliario" />
+    <style
+        name="Theme.BImobiliario" 
+        parent="Base.Theme.BImobiliario" />
+
 </resources>

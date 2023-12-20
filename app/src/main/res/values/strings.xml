@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">BImobiliario</string>
-    <string name="tituloToolbar">Maquininha</string>
+    <string name="tituloToolbar">Banco Imobiliário</string>
 
     <!--Textos dos jogadores-->
     <string name="txtJog1">Jogador 1</string>
@@ -20,6 +20,7 @@
     <string name="botaoIniciar">Iniciar</string>
     <string name="botaoSorte">Sorte</string>
     <string name="botaoSalvar">Salvar</string>
+    <string name="botaoRecuperar">Recuperar</string>
 
     <!--Textos do Radio Button-->
     <string name="jog1">Jog 1</string>

@@ -498,61 +498,78 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/grupo1" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btSorte"
-        android:layout_width="120dp"
+    <LinearLayout
+        android:id="@+id/botoes"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/botao"
-        android:fontFamily="sans-serif-black"
-        android:padding="5dp"
-        android:text="@string/botaoSorte"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="18sp"
+        android:orientation="horizontal"
         android:layout_marginTop="16dp"
-        app:backgroundTint="@null"
-        app:layout_constraintEnd_toStartOf="@+id/btSalvar"
-        app:layout_constraintStart_toEndOf="@+id/btIniciar"
-        app:layout_constraintTop_toBottomOf="@+id/txtSorte" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btSalvar"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/botao"
-        android:fontFamily="sans-serif-black"
-        android:padding="5dp"
-        android:text="@string/botaoSalvar"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:backgroundTint="@null"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSorte" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btIniciar"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"
-        android:background="@drawable/botao"
-        android:fontFamily="sans-serif-black"
-        android:padding="5dp"
-        android:text="@string/botaoIniciar"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:backgroundTint="@null"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSorte" />
+        app:layout_constraintTop_toBottomOf="@id/txtSorte">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btIniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao"
+            android:textStyle="bold"
+            android:text="@string/botaoIniciar"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:layout_margin="3dp"
+            app:backgroundTint="@null" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btSorte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao"
+            android:textStyle="bold"
+            android:text="@string/botaoSorte"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:layout_margin="3dp"
+            app:backgroundTint="@null" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btSalvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao"
+            android:textStyle="bold"
+            android:text="@string/botaoSalvar"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:layout_margin="3dp"
+            app:backgroundTint="@null" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btRecuperar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao"
+            android:textStyle="bold"
+            android:text="@string/botaoRecuperar"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:layout_margin="3dp"
+            app:backgroundTint="@null" />
+
+    </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
