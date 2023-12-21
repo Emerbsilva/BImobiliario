@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">BImobiliario</string>
     <string name="tituloToolbar">Banco Imobiliário</string>
+    <string name="imgToolbar">Sobre Nós</string>
 
     <!--Textos dos jogadores-->
     <string name="txtJog1">Jogador 1</string>

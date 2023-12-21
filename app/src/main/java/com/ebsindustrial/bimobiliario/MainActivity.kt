@@ -26,12 +26,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         // Criado uma barra toolbar
-        val toolBar = binding.toolbar
-        toolBar.setTitle(R.string.tituloToolbar)
-        //toolBar.title = "Maquininha"
-        toolBar.setTitleTextColor(getColor(R.color.white))
-        toolBar.setBackgroundColor(getColor(R.color.fundoDark))
-        toolBar.setTitleMargin(250, 0, 200, 0)
+//        val toolBar = binding.toolbar
+//        toolBar.setTitle(R.string.tituloToolbar)
+//        //toolBar.title = "Maquininha"
+//        toolBar.setTitleTextColor(getColor(R.color.white))
+//        toolBar.setBackgroundColor(getColor(R.color.fundoDark))
+//        toolBar.setTitleMargin(250, 0, 200, 0)
 
         sharedPref = getSharedPreferences("bancoImobiliario", Context.MODE_PRIVATE)
 

@@ -8,13 +8,53 @@
     android:background="@color/fundo"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarToolbar"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/fundoDark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tituloToolbar"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageView
+                android:id="@+id/sobre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sobre"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toBottomOf="@id/toolbar"
+                app:layout_constraintEnd_toEndOf="@id/toolbar"
+                app:layout_constraintTop_toTopOf="@id/toolbar"
+                android:contentDescription="@string/imgToolbar" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
 
     <LinearLayout
         android:id="@+id/linear1"
@@ -25,7 +65,7 @@
         android:background="@color/lightBlue"
         android:layout_marginTop="5dp"
         android:layout_marginStart="16dp"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintTop_toBottomOf="@id/appBarToolbar"
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
@@ -60,7 +100,7 @@
         android:gravity="center"
         android:background="@color/lightRed"
         android:layout_marginTop="5dp"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintTop_toBottomOf="@id/appBarToolbar"
         app:layout_constraintStart_toEndOf="@+id/linear1"
         app:layout_constraintEnd_toStartOf="@+id/linear3">
 
@@ -97,7 +137,7 @@
         android:background="@color/lightYellow"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="16dp"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintTop_toBottomOf="@id/appBarToolbar"
         app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
@@ -569,7 +609,5 @@
             app:backgroundTint="@null" />
 
     </LinearLayout>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
