@@ -22,6 +22,7 @@
     <string name="botaoSorte">Sorte</string>
     <string name="botaoSalvar">Salvar</string>
     <string name="botaoRecuperar">Recuperar</string>
+    <string name="botaoDados">Dados</string>
 
     <!--Textos do Radio Button-->
     <string name="jog1">Jog 1</string>

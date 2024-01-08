@@ -25,27 +25,18 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Criado uma barra toolbar
-//        val toolBar = binding.toolbar
-//        toolBar.setTitle(R.string.tituloToolbar)
-//        //toolBar.title = "Maquininha"
-//        toolBar.setTitleTextColor(getColor(R.color.white))
-//        toolBar.setBackgroundColor(getColor(R.color.fundoDark))
-//        toolBar.setTitleMargin(250, 0, 200, 0)
-
         sharedPref = getSharedPreferences("bancoImobiliario", Context.MODE_PRIVATE)
 
         desabilita()
         iniciar()
         sorte()
-        salvar()
         recuperar()
         transferir()
     }
     //
     private fun desabilita(){
         binding.btSorte.isEnabled = false
-        binding.btSalvar.isEnabled = false
+        binding.btDados.isEnabled = false
         binding.btTransferir.isEnabled = false
         binding.radio1Jog1.isEnabled = false
         binding.radio1Jog2.isEnabled = false
@@ -66,7 +57,7 @@ class MainActivity : AppCompatActivity() {
     //
     private fun habilita(){
         binding.btSorte.isEnabled = true
-        binding.btSalvar.isEnabled = true
+        binding.btDados.isEnabled = true
         binding.btTransferir.isEnabled = true
         binding.radio1Jog1.isEnabled = true
         binding.radio1Jog2.isEnabled = true
@@ -143,15 +134,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
     //
-    private fun salvar(){
-        binding.btSalvar.setOnClickListener {
-            saveData()
-            Toast.makeText(this, "Informações do jogo salvas com sucesso!!", Toast.LENGTH_SHORT).show()
-        }
-    }
-    //
     private fun recuperar(){
-        binding.btRecuperar.setOnClickListener {
+        binding.recover.setOnClickListener {
             getData()
         }
     }
@@ -549,6 +533,7 @@ class MainActivity : AppCompatActivity() {
                     binding.txtSorte.setText(R.string.semDestino)
                 }
             }else{binding.txtSorte.setText(R.string.semEmissor)}
+            saveData()
         }
     }
 }
