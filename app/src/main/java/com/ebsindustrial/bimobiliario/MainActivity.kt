@@ -5,6 +5,7 @@ import android.content.SharedPreferences
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.annotation.RequiresApi
 import com.ebsindustrial.bimobiliario.databinding.ActivityMainBinding
 import kotlin.random.Random
@@ -135,9 +136,7 @@ class MainActivity : AppCompatActivity() {
     //
     private fun recuperar(){
         binding.recover.setOnClickListener {
-            habilita()
             getData()
-            binding.txtSorte.setText(R.string.recupera)
         }
     }
     //
