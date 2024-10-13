@@ -136,6 +136,8 @@ class MainActivity : AppCompatActivity() {
     private fun recuperar(){
         binding.recover.setOnClickListener {
             getData()
+            habilita()
+            binding.txtSorte.setText(R.string.recupera)
         }
     }
     //
