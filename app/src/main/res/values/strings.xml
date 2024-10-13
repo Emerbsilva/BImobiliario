@@ -36,20 +36,21 @@
     <!--Textos da Fun Iniciar-->
     <string name="valorInicial">25000</string>
     <string name="mensagemInicial">Estamos iniciando o Jogo. Cada participante receberá R$ 25.000</string>
+    <string name="recupera">RECUPERAÇÃO DE DADOS REALIZADA COM SUCESSO. \n\nVAMOS CONTINUAR A PARTIDA.</string>
 
     <!--Textos da Fun Sorte-->
     <string name="sorte1">VÁ PARA A PRISÃO E FIQUE 2 RODADAS SEM DIREITO DE JOGAR E SEM DIREITO A FIANÇA.</string>
     <string name="sorte2">PAGUE R$ 1.000,00 DO IRPF.</string>
     <string name="sorte3">SEU CARRO FOI ROUBADO MAS VOCE TINHA SEGURO. RECEBA R$ 1.000,00</string>
     <string name="sorte4">PROBLEMAS COMERCIAIS. PAGUE R$ 200,00 PARA CADA JOGADOR.</string>
-    <string name="sorte5">PARABENS VOCE GANHOU A PROMOÇÃO NIVEA. RECEBA R$ 500,00</string>
+    <string name="sorte5">PARABENS, VOCE GANHOU A PROMOÇÃO NIVEA. RECEBA R$ 500,00</string>
     <string name="sorte6">PROMOÇÃO DA VIVO. RECEBA R$ 350,00</string>
     <string name="sorte7">PREOCUPADO COM O FUTURO, VOCE COLOCOU DINHEIRO NA PREVIDENCIA PRIVADA. PAGUE R$ 200,00</string>
     <string name="sorte8">VOCE GANHOU UM HABEAS CORPOS PARA USAR QUANDO PRECISAR.</string>
     <string name="sorte9">VOCE FEZ UMA APOSTA COM OS JOGADORES E GANHOU. RECEBA R$ 500,00 DE CADA JOGADOR.</string>
     <string name="sorte10">VOCE COMPROU UM CARRO DA FIAT E ESTÁ ECONOMIZANDO COM COMBUSTIVEL E MANUTENÇÃO. RECEBA R$ 1.000,00</string>
     <string name="sorte11">VÁ PARA O INICIO.</string>
-    <string name="sorte12">VOCE FEZ UMA APOSTA COM OS JOGADORES E PERDEU. PAGUE R$ 500,00 DE CADA JOGADOR.</string>
+    <string name="sorte12">VOCE FEZ UMA APOSTA COM OS JOGADORES E PERDEU. PAGUE R$ 500,00 PARA CADA JOGADOR.</string>
     <string name="sorte13">VOLTE 9 (NOVE) CASAS.</string>
     <string name="sorte14">AVANCE 9 (NOVE) CASAS.</string>
     <string name="sorte15">MULTA POR NÃO USAR O CINTO DE SEGUNRANÇA. PAGUE R$ 400,00</string>
