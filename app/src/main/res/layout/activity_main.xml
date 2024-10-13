@@ -556,10 +556,10 @@
 
     <LinearLayout
         android:id="@+id/botoes"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="16dp"
+        android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtSorte">
@@ -568,42 +568,45 @@
             android:id="@+id/btIniciar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
             android:background="@drawable/botao"
-            android:textStyle="bold"
             android:text="@string/botaoIniciar"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="11sp"
-            android:layout_margin="3dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
             app:backgroundTint="@null" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btSorte"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="2"
             android:background="@drawable/botao"
-            android:textStyle="bold"
             android:text="@string/botaoSorte"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="11sp"
-            android:layout_margin="3dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
             app:backgroundTint="@null" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btDados"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
             android:background="@drawable/botao"
-            android:textStyle="bold"
             android:text="@string/botaoDados"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="11sp"
-            android:layout_margin="3dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
             app:backgroundTint="@null" />
 
     </LinearLayout>

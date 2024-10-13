@@ -136,7 +136,9 @@ class MainActivity : AppCompatActivity() {
     //
     private fun recuperar(){
         binding.recover.setOnClickListener {
+            habilita()
             getData()
+            binding.txtSorte.setText("RECUPERAÇÃO DE DADOS REALIZADA COM SUCESSO. \n\nVAMOS CONTINUAR A PARTIDA.")
         }
     }
     //
